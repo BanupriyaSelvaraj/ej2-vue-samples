@@ -1,5 +1,5 @@
 <template>
-    <template v-if="data.TaskName == 'Oscar moments'">
+    <div v-if="data.TaskName == 'Oscar moments'">
       <div class="e-gantt-child-taskbar e-custom-moments" style="height:100%;border-radius:5px;">
         <template v-if="data.ganttProperties.duration < 4">
           <img class="moments" height="32px" width="32px">
@@ -12,8 +12,8 @@
           >{{data.Performance}}</span>
         </template>
       </div>
-    </template>
-    <template v-else-if="data.TaskName == 'Oscar performance'">
+    </div>
+    <div v-else-if="data.TaskName == 'Oscar performance'">
       <div
         class="e-gantt-child-taskbar e-custom-performance"
         style="height:100%;border-radius:5px;"
@@ -29,8 +29,8 @@
           >{{data.Performance}}</span>
         </template>
       </div>
-    </template>
-    <template v-else>
+    </div>
+    <div v-else>
       <div
         class="e-gantt-parent-taskbar e-custom-parent"
         style="height:100%;border-radius:5px;text-overflow:ellipsis;"
@@ -62,7 +62,7 @@
           </template>
         </template>
       </div>
-    </template>
+    </div>
 </template>
 <script>
 export default {
