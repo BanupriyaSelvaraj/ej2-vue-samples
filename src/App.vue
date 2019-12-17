@@ -85,7 +85,7 @@
                         </div>
                     </div>
                     <div class='sb-header-item sb-table-cell sb-settings-wrapper'>
-                        <div class='sb-setting-btn' role="button" tabindex="0" aria-label="toggle settings menu" tabindex="">
+                        <div class='sb-setting-btn' role="button" tabindex="0" aria-label="toggle settings menu">
                             <span class='sb-settings sb-icons sb-icon-Settings-Preferences'></span>
                         </div>
                     </div>
