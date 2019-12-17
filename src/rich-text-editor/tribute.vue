@@ -16,6 +16,7 @@
         popup with a list of matching items based on the provided key-value pair.</p>
     <p>For example, type '@' in the above sample to show the employee list with their mail IDs in the autocomplete popup.</p>
 </div>
+</div>
 </template>
 <style>
     .tribute-container {
