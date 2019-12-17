@@ -17,7 +17,7 @@
             <li><code>AutoFit</code> - Auto fit current column.</li>
             <li><code>AutoFitAll</code> - Auto fit all columns.</li>
             <li><code>ColumnChooser</code> - Choose the column visibility.</li>
-            <li><code>Filter</code> - Filter option is shown to filter the current column.
+            <li><code>Filter</code> - Filter option is shown to filter the current column.</li>
     </ul>
     
     <br/>
