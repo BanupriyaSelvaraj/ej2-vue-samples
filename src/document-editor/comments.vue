@@ -1,32 +1,33 @@
 <template>
-  <div class="control-section">
+<div class="control-section">
   <div class="sample-container">
         <div class="default-section">
-          <div ref="de_titlebar" id="documenteditor_titlebar" class="e-de-ctn-title">
-    <div v-on:keydown="titleBarKeydownEvent" v-on:click="titleBarClickEvent" class="single-line" id="documenteditor_title_contentEditor" title="Document Name. Click or tap to rename this document." contenteditable="false">
-        <label v-on:blur="titleBarBlurEvent" id="documenteditor_title_name" :style="titileStyle" >{{documentName}}</label>
-    </div>    
-    <ejs-button id="de-print" :style="iconStyle" :iconCss="printIconCss" v-on:click.native="printBtnClick" title="Print this document (Ctrl+P).">Print</ejs-button>	
-    <ejs-dropdownbutton ref="de-export" :style="iconStyle" :items="exportItems" :iconCss="exportIconCss" cssClass="e-caret-hide" content="Download" v-bind:select="onExport" :open="openExportDropDown" title="Download this document."></ejs-dropdownbutton>        
-</div>
-<ejs-documenteditorcontainer id='container' ref="doceditcontainer" :enableToolbar='true' style="height:600px"></ejs-documenteditorcontainer>            
+            <div ref="de_titlebar" id="documenteditor_titlebar" class="e-de-ctn-title">
+                <div v-on:keydown="titleBarKeydownEvent" v-on:click="titleBarClickEvent" class="single-line" id="documenteditor_title_contentEditor" title="Document Name. Click or tap to rename this document." contenteditable="false">
+                    <label v-on:blur="titleBarBlurEvent" id="documenteditor_title_name" :style="titileStyle" >{{documentName}}</label>
+                </div>    
+                <ejs-button id="de-print" :style="iconStyle" :iconCss="printIconCss" v-on:click.native="printBtnClick" title="Print this document (Ctrl+P).">Print</ejs-button>	
+                <ejs-dropdownbutton ref="de-export" :style="iconStyle" :items="exportItems" :iconCss="exportIconCss" cssClass="e-caret-hide" content="Download" v-bind:select="onExport" :open="openExportDropDown" title="Download this document."></ejs-dropdownbutton>        
+            </div>
+            <ejs-documenteditorcontainer id='container' ref="doceditcontainer" :enableToolbar='true' style="height:600px"></ejs-documenteditorcontainer>            
         </div>
-    </div>
-     <div id="action-description">
-            <p>This example demonstrates how to add and edit comments in a Word document using DocumentEditor.</p>
-            </div>
-            <div id="description">
-                <div>
-                <p>In this example, comments features in the document editor can be found.</p>
-    <ul>
-        <li>Add a comment.</li>
-        <li>Reply to a comment.</li>
-        <li>Resolving the comment discussion.</li>
-    </ul>
-                     <p style="display: block"> More information about the document editor features can be found in this <a target="_blank" href="http://ej2.syncfusion.com/vue/documentation/document-editor">documentation section.</a>
-                    </p>
-                </div>
-            </div>
+  </div>
+  <div id="action-description">
+        <p>This example demonstrates how to add and edit comments in a Word document using DocumentEditor.</p>
+  </div>
+  <div id="description">
+        <div>
+            <p>In this example, comments features in the document editor can be found.</p>
+        <ul>
+            <li>Add a comment.</li>
+            <li>Reply to a comment.</li>
+            <li>Resolving the comment discussion.</li>
+        </ul>
+            <p style="display: block"> More information about the document editor features can be found in this <a target="_blank" href="http://ej2.syncfusion.com/vue/documentation/document-editor">documentation section.</a>
+            </p>
+        </div>
+  </div>
+</div>    
 </template>
 <style>
 
