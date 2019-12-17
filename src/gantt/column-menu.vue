@@ -36,7 +36,7 @@
             <li><code>AutoFit</code> - Auto-fit current column.</li>
             <li><code>AutoFitAll</code> - Auto-fit all columns.</li>
             <li><code>ColumnChooser</code> - Chooses the column visibility.</li>
-            <li><code>Filter</code> - Filters the current column.
+            <li><code>Filter</code> - Filters the current column.</li>
     </ul>
     <br/>
 
