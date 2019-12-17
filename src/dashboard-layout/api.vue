@@ -56,7 +56,7 @@
         <p>
             This sample allows to configure the <code><a href="https://ej2.syncfusion.com/vue/documentation/api/dashboard-layout#cellspacing" target="_blank">cellSpacing</a></code>, 
     <code><a href="https://ej2.syncfusion.com/vue/documentation/api/dashboard-layout#allowfloating" target="_blank">allowFloating</a></code> and
-    <code><a href="https://ej2.syncfusion.com/vue/documentation/api/dashboard-layout#allowresizing" target="_blank">allowResizing</a></code> properties of the dashboard layout component.
+    <code><a href="https://ej2.syncfusion.com/vue/documentation/api/dashboard-layout#allowresizing" target="_blank">allowResizing</a></code> properties of the dashboard layout component.</p>
     </div>
   </div>
 </template>
