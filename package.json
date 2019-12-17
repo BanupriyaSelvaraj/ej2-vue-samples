@@ -38,6 +38,7 @@
     "@syncfusion/ej2-vue-richtexteditor": "*",
     "@syncfusion/ej2-vue-schedule": "*",
     "@syncfusion/ej2-vue-splitbuttons": "*",
+    "@syncfusion/ej2-vue-spreadsheet": "*",
     "@syncfusion/ej2-vue-treegrid": "*",
     "@syncfusion/ej2-vue-treemap": "*",
     "@types/codemirror": "0.0.56",
