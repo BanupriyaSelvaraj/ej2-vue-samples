@@ -43,6 +43,7 @@
     <div id="description">
         <p>
             This sample demonstrates how to update the panels dynamically in the dashboard layout component.
+        </p>
     </div>
 </div>
 </template>
