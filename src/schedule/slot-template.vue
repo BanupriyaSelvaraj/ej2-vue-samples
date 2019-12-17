@@ -3,6 +3,7 @@
     <div class="templatewrap">
         <p v-html=getCellContent(data.date)></p>
     </div>
+</div>   
 </template>
 
 <script lang='ts'>
