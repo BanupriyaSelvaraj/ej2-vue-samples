@@ -1,0 +1,103 @@
+{
+    "name": "Circular Gauge",
+    "directory": "circular-gauge",
+    "category": "Data Visualization",
+    "samples": [
+        {
+            "url": "default",
+            "name": "Default Functionalities",
+            "category": "Circular Gauge",
+             "api":{"CircularGauge": [ "axes"]}
+        },
+        {
+            "url": "range",
+            "name": "Range",
+            "category": "Circular Gauge",
+            "api":{"CircularGauge": [ "axes"]}
+        },
+        {
+            "url": "labels",
+            "name": "Tick and Labels",
+            "category": "Circular Gauge",
+            "api":{"CircularGauge": [ "axes"]}
+        },
+        {
+            "url": "customization",
+            "name": "Gauge Customization",
+            "category": "Circular Gauge",
+            "api":{"CircularGauge": [ "axes"]}
+        },
+        {
+            "url": "semi-circular-gauge",
+            "name": "Semi-circular Gauge",
+            "category": "Circular Gauge",
+            "api":{"CircularGauge": [ "axes"]}
+        },
+        {
+            "url": "arc-gauge",
+            "name": "Arc Gauge",
+            "category": "Circular Gauge",
+            "api":{"CircularGauge": [ "axes"]}
+        },
+        {
+            "url": "legend",
+            "name": "Legend",
+            "category": "Circular Gauge",
+            "api":{"CircularGauge": [ "legend"]}
+        },
+        {
+            "url": "compass",
+            "name": "Direction Compass",
+            "category": "Circular Gauge",
+            "api":{"CircularGauge": [ "axes", "axisLabelRender"]}
+        },
+        {
+            "url": "pointer-image",
+            "name": "Pointer Image",
+            "category": "Pointer",
+            "api":{"CircularGauge": [ "axes", "centerY"]}
+        },
+        {
+            "url": "pointer",
+            "name": "Pointer Customization",
+            "category": "Pointer",
+            "api":{"CircularGauge": [ "axes", "centerY"]}
+        },
+        {
+            "url": "multiple-axis",
+            "name": "Multiple Axis",
+            "category": "Axes",
+            "api":{"CircularGauge": ["axes"]}
+        },
+        {
+            "url": "user-interaction",
+            "name": "Pointer Drag",
+            "category": "User Interaction",
+            "api":{"CircularGauge": ["axes", "enablePointerDrag", "dragEnd", "dragMove"]}
+        },
+        {
+            "url": "tooltip",
+            "name": "Tooltip",
+            "category": "User Interaction",
+            "api":{"CircularGauge": ["axes", "tooltip", "tooltipRender"]}
+        },
+        {
+            "url": "data-sample",
+            "name": "Data Sample",
+            "category": "Live",
+            "api":{"CircularGauge": ["axes"]}
+        },
+        {
+            "url": "apple-watch-rings",
+            "name": "Apple Watch Rings",
+            "category": "Live"
+        },
+        {
+            "url": "speedometer",
+            "name": "Speedometer",
+            "category": "Live",
+            "api":{"CircularGauge": [ "axes"]}
+        }
+        
+    ]
+}

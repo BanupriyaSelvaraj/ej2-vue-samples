@@ -1,0 +1,39 @@
+{
+    "name": "Numeric Textbox",
+    "directory": "numerictextbox",
+    "category": "Inputs",
+    "ftName": "numerictextbox",
+    "samples": [
+        {
+            "url": "default",
+            "name": "Default Functionalities",
+            "category": "Numeric Textbox",
+            "description": "The NumericTextBox is used to get the numbered inputs from the users and the currency and percentage text boxes to get the currency and percentage inputs."
+        },
+        {
+            "url": "range-validation",
+            "name": "Range Validation",
+            "category": "Numeric Textbox",
+            "description": "The NumericTextBox has options to restrict the input value between a specific range using min, max, and strictMode properties."
+        },
+        {
+            "url": "custom-format",
+            "name": "Custom Format",
+            "category": "Numeric Textbox",
+            "description": "The NumericTextBox provides an option to customize the display format of the numeric value using the format property."
+        },
+        {
+            "url": "restrict-decimals",
+            "name": "Restrict Decimals",
+            "category": "Numeric Textbox",
+            "description": "The NumericTextBox provides an option to restrict the number of decimal values, by using the decimals property. So, it can only accept the integer value alone."
+        },
+        {
+            "url": "two-way",
+            "name": "Two-Way Binding",
+            "category": "Numeric Textbox",
+            "description": "This sample demonstrates the two way bindig in numeric textbox. when you change the value in one numeric textbox component, it will update in the other numeric textbox by using value property."
+        }
+
+    ]
+}
