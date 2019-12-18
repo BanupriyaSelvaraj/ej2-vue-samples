@@ -369,12 +369,12 @@ import * as enCultureData from './common/cldr-data/main/fr-CH/all.json';
 import * as chinaCultureData from './common/cldr-data/main/zh/all.json';
 import * as samplesJSON from './common/samplelist';
 import { ListView, ListBase } from '@syncfusion/ej2-lists';
-import * as elasticlunr from './common/lib/elasticlunr';
-import * as hljs from './common/lib/highlightjs';
+// import * as elasticlunr from './common/lib/elasticlunr';
+// import * as hljs from './common/lib/highlightjs';
 import * as searchJson from './common/search-index.json';
 import { Controls, MyWindow, DestroyMethod, Samples } from './model';
 import routes from './router.config';
-import { setTimeout } from "timers";
+// import { setTimeout } from "timers";
 
 loadCldr(numberingSystems, chinaCultureData, enCultureData, swissCultureDate, currencyData, deCultureData, arCultureData);
 L10n.load(Locale);
@@ -426,6 +426,8 @@ let sbHeader: HTMLElement;
 let settingElement: HTMLElement
 let resetSearch: Element;
 let searchEle: any;
+declare let hljs: any;
+declare let elasticlunr: any;
 declare let window: MyWindow;
 let apiGrid: Grid;
 let samplesList: Controls[] | { [key: string]: Object }[];
@@ -456,9 +458,12 @@ contentToolbarTemplate = sampleNavigation + '<div class="sb-icons sb-mobile-sett
 tabContentToolbar = createElement('div', { className: 'sb-content-toolbar', innerHTML: contentToolbarTemplate });
 
 /* vue instance */
-let sampleBrowser: Vue = new Vue({
-    el: "#app",
-    data: {
+export default Vue.extend({
+  name: 'app',
+     data: function(){
+       return{
+       myJson: searchJson,
+       }
     },
     router,
     created: function () {
