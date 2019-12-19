@@ -573,7 +573,7 @@ export default Vue.extend({
         },
 
         breadCrumbUpdate(controlName: string, category: string, sampleName: string) {
-            let ele: Element = this.$el.querySelector('#sample-bread-crumb');
+            let ele: Element = this.$el.querySelector('#sample-bread-crumb') as Element;
             sb.vars.breadCrumbObject.component.innerHTML = controlName;
             if (category && controlName.toLowerCase() !== category.toLowerCase()) {
                 sb.vars.breadCrumbObject.subCategory.innerHTML = category;
@@ -594,7 +594,7 @@ export default Vue.extend({
         },
 
         updateBreadCrumb: function () {
-            this.$el.querySelector('#component-name .sb-sample-text').innerHTML = this.$router.currentRoute.meta.eCompName;
+            (this.$el.querySelector('#component-name .sb-sample-text') as HTMLElement).innerHTML = this.$router.currentRoute.meta.eCompName;
             this.breadCrumbUpdate(this.$router.currentRoute.meta.eCompName, this.$router.currentRoute.meta.eCategoryName, this.$router.currentRoute.meta.eSampleName);
         },
 
@@ -961,7 +961,7 @@ export default Vue.extend({
 
         rendercopycode: function (): void {
             let ele: HTMLElement = createElement('div', { className: 'copy-tooltip', innerHTML: '<div class="e-icons copycode"></div>' });
-            this.$el.querySelector('#sb-source-tab').appendChild(ele);
+            (this.$el.querySelector('#sb-source-tab') as HTMLElement).appendChild(ele);
             let copiedTooltip: Tooltip = new Tooltip({
                 content: 'Copied to clipboard ',
                 position: 'BottomCenter',
@@ -1009,7 +1009,7 @@ export default Vue.extend({
                 this.headerAction('changeTheme');
 
             });
-            document.addEventListener('click', this.headerAction.bind(this, 'closePopup'));
+            document.addEventListener('click', (this.headerAction.bind(this, 'closePopup') as any));
             searchButton.addEventListener('click', (e: MouseEvent) => {
                 e.preventDefault();
                 e.stopPropagation();
@@ -1059,7 +1059,7 @@ export default Vue.extend({
         },
 
         changeRtl(args: any): void {
-            let elementlist: HTMLElement[] = selectAll('.e-control', this.$el.querySelector('#control-content'));
+            let elementlist: HTMLElement[] = selectAll('.e-control', (this.$el.querySelector('#control-content') as HTMLElement));
 
             for (let control of elementlist) {
                 let eleinstance: Object[] = (<DestroyMethod>control).ej2_instances;
